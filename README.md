@@ -16,7 +16,7 @@ API de banco construída em decorrer do curso de desenvolvimento **Back-End** of
 ![Insomnia](https://img.shields.io/badge/Insomnia-5849be?style=for-the-badge&logo=Insomnia&logoColor=white)
 
 ## :rocket: Como utilizar:
-Primeiro deve-se fazer o fork do projeto, e em seguida clonar o reposítório do fork para sua máquina. Após o clone, as dependências devem ser instaladas através do npm. Para que o servidor seja iniciado na máquina, é necessário acessar a pasta do projeto /API_Banco e no terminal, rodar o comando `npm run dev`.
+Primeiro deve-se fazer o fork do projeto, e em seguida clonar o reposítório do fork para sua máquina. Após o clone, as dependências devem ser instaladas através do npm. Para que o servidor seja iniciado na máquina, é necessário acessar a pasta do projeto /API_Banco e no terminal, rodar o comando `npm run dev` no terminal.
 
 ## :briefcase: Funções e Endpoints da API:
 - ### :telescope: Listar contas bancárias de usuários - GET  `localhost:3000/contas?senha_banco=Cubos123Bank`
@@ -42,7 +42,7 @@ Primeiro deve-se fazer o fork do projeto, e em seguida clonar o reposítório do
  
    ![Criar conta de usuário](https://github.com/giovaneDamaso/API_Banco/assets/127995277/7adaf447-c681-427b-8184-239da754f0dd) <br>
   
-- ### :recycle: Atualizar informações da conta de um usuário - PUT  `localhost:3000/contas/:numeroConta/usuario`
+- ### :recycle: Atualizar informações da conta de um usuário - PUT `localhost:3000/contas/:numeroConta/usuario`
   
   Para atualizar a conta, deve-se criar um HTTP Request com o verbo PUT no Insmonia. Após isso, o procedimento é similar ao acima, de criação de conta. Entretanto, lembre-se que duas contas não podem possuir o mesmo CPF.
   
@@ -53,7 +53,8 @@ Primeiro deve-se fazer o fork do projeto, e em seguida clonar o reposítório do
   ![Remover conta bancária de um usuário](https://github.com/giovaneDamaso/API_Banco/assets/127995277/46ddfa3b-e14f-43d4-a3f4-d7a100b7e558)
 
 - ### :dollar: Depositar valor - POST  `localhost:3000/transacoes/depositar`
-
+  Esta funcionalidade utilizará a biblioteca date-fns, por isso, esta deve ser instalada utilizando o comando `npm install date-fns`.
+  
   Para acessar esta funcionalidade, deve-se criar um HTTP Request com o verbo POST no Insmonia. Logo abaixo, na aba Body, selecionar o formato JSON e inserir um objeto no formato JSON preenchendo os campos numero da conta e valor a ser depositado:
   ```json
   {

@@ -4,7 +4,7 @@ API de banco construída em decorrer do curso de desenvolvimento **Back-End** of
 ## :desktop_computer: Linguagem:  
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  
 
-## :globe_with_meridians: Framework:  
+## :globe_with_meridians: Ambiente de execução:  
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)  
 
 ## :books: Bibliotecas:  
